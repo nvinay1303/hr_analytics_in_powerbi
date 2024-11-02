@@ -4,11 +4,21 @@
 ## Project Overview
 This project focuses on building a data model and analyzing HR data of a fictitios compane named Atlas Labs using Power BI. The report design includes insights into employee attrition, hiring trends, and key HR metrics.
 
-### Key Objectives
+---
+
+## Key Objectives
 - **Data Modeling:** Developing a comprehensive data model
 - **Report Design:** Creating an interactive and insightful report for HR analytics
 
 ---
+
+## Concepts
+
+- Measures & calculated columns
+- Date table
+- Visuals - bar chart, stacked column chart, line chart, tree map, pie chart
+- page-level filters
+- DAX commands & operations - CALCULATE(), DISTINCTCOUNT(), VAR(), CALENDAR(), etc.
 
 ## Steps
 
