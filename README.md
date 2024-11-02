@@ -2,7 +2,7 @@
 # HR Analytics Using Power BI
 
 ## Project Overview
-This project focuses on building a data model and analyzing HR data using Power BI. The report design includes insights into employee attrition, hiring trends, and key HR metrics.
+This project focuses on building a data model and analyzing HR data of a fictitios compane named Atlas Labs using Power BI. The report design includes insights into employee attrition, hiring trends, and key HR metrics.
 
 ### Key Objectives
 - **Data Modeling:** Developing a comprehensive data model
@@ -100,15 +100,29 @@ These measures are displayed as card visuals, showing:
 
 ---
 
-### 4. Hiring Trends Over Time
+#### 3.1 Hiring Trends Over Time
 
 To analyze hiring trends over time, a stacked column chart is created using `DimDate` and `FactPerformanceRating` tables. Since `DimDate` already has an active relationship, additional relationships are activated using `USERELATIONSHIP()` within the `CALCULATE()` function.
 
+The visualization of employee hiring trends over the yers based on attrition, department and gender are given below by using stacked column charts.
+
+![Employee Hiring Trends](<assets/Employee_Hiring _Trends_1.png>)
+*Stacked Column chart visualizing employee attrition by year*
+
+![Employee Hiring Trends](<assets/Employee_Hiring _Trends_2.png>)
+*Stacked Column chart visualizing employee attrition by department*
+
+![Employee Hiring Trends](<assets/Employee_Hiring _Trends_3.png>)
+*Stacked Column chart visualizing employee attrition by gender*
+
 ---
 
-### 5. Analyzing Departments and Job Roles
+### 3.2 Analyzing Departments and Job Roles
 
-A clustered bar chart is created to analyze typical roles and hiring patterns within departments at Atlas Labs.
+A treemap visualization is created to analyze typical roles and hiring patterns within departments at Atlas Labs.
+
+![Employee Hiring Trends](<assets/Active_Employees_By_Dept_and_Job_Role.png>)
+*Stacked Column chart visualizing employee attrition by gender*
 
 #### Initial Insights
 - **Total Employees:** 1470 since inception
@@ -118,20 +132,30 @@ A clustered bar chart is created to analyze typical roles and hiring patterns wi
 
 ---
 
-### Key HR Metrics: Diversity & Inclusion
+## 4. Factors impacting employee attrition - Key HR Metrics 
+
+### 4.1 Diversity & Inclusion
 
 To understand diversity, metrics related to age and gender are analyzed. A conditional column is created to categorize employee ages into bins. Key visuals include:
 - Card visuals for **minimum and maximum age**
 - Column charts for **employee distribution by age**
 - Clustered charts for **employee distribution across age bins and gender**
 
-Additional metrics:
-- **Marital Status and Gender** distribution
-- **Employees by Ethnicity and Average Salary:** The lowest average salary ($106k) is among mixed/multiple ethnic groups.
+![Employee Hiring Trends](<assets/Factors_affecting_attrition_page-level_filter.png>)
+
+
+### 4.2 Marital Status and Gender** distribution
+
+![Employee Hiring Trends](<assets/Employees_by_maritas_status.png>)
+
+### 4.3 Employees by Ethnicity and Average Salary
+
+![Employee Hiring Trends](<assets/Employees_by_ethnicity_and_average_salary.png>)
+** The lowest average salary ($106k) is among mixed/multiple ethnic groups.
 
 ---
 
-### Performance Tracker
+### 5. Performance Tracker
 
 The performance tracker monitors individual employee performance based on yearly reviews.
 
@@ -162,14 +186,22 @@ The performance tracker monitors individual employee performance based on yearly
 
 Employee attrition, whether voluntary or involuntary, is analyzed with insights into factors contributing to attrition.
 
-- **Sales Team:** Highest attrition rate for sales representatives.
 - **Attrition by Department and Job Role**
+
+![Employee Hiring Trends](<assets/Percentage_attrition_by_dept_and_job_role.png>)
+
+It can be noted that sales representatives have the highest attrition rates.
+
+
 - **Attrition by Hire Date**
-- **Frequent Travelers:** Highest attrition rates among employees who travel frequently.
 
----
+![Employee Hiring Trends](<assets/Attrition_by_hire_date.png>)
 
-### Layout and Design Improvements
 
-- **Theme Formatting**
-- **Page Navigation**
+- **Other factors contributing to attrition**
+
+![Employee Hiring Trends](<assets/Other_attrition_factors.png>)
+
+- Highest attrition rates are among employees who travel frequently.
+
+
